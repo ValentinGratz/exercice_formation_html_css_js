@@ -1,0 +1,50 @@
+<html><head>
+  <title>calcul prix</title>
+  
+  
+  
+  
+  
+</head>
+
+<body bgcolor="white" onload="calcul_form()" class="page">
+
+
+<form name="form1">
+<center>
+
+<table border="1" cellspacing="0" bgcolor="#FFFFAA">
+  <tbody><tr bgcolor="#CCCCCC">
+    <th width="30%">Quantité
+    
+    </td><th width="30%">Prix unitaire
+    </th><th width="40%">Prix
+  </th></tr><tr>
+    <th><input type="text" name="q1" size="3" maxlength="2" style="text-align: center; " onblur="test_champ(this)">
+    </th>
+    </td><th><input type="text" name="pu1" value="" size="5" style="text-align: right; " onblur="test_champ(this)" >
+    </th><th><input type="text" name="p1" size="8" style="text-align: right; ">
+  </th></tr><tr>
+    <th><input type="text" name="q2" size="3" maxlength="2" style="text-align: center; " onblur="test_champ(this)">
+    </th>
+    </td><th><input type="text" name="pu2" value="" size="5" style="text-align: right; " onblur="test_champ(this)" >
+    </th><th><input type="text" name="p2" size="8" style="text-align: right; ">
+  </th></tr><tr>
+    <th><input type="text" name="q3" size="3" maxlength="2" style="text-align: center; " onblur="test_champ(this)">
+    </th>
+    </td><th><input type="text" name="pu3" value="" size="5" style="text-align: right; " onblur="test_champ(this)" >
+    </th><th><input type="text" name="p3" size="8" style="text-align: right; ">
+  </th></tr><tr>
+    <td colspan="3" align="right" bgcolor="#CCCCCC"><b>Total TTC</b>&nbsp;&nbsp;&nbsp;
+    </td><th><input type="text" name="total" size="8" style="text-align: right; ">
+</th></tr></tbody></table>
+
+
+</form>
+
+
+
+
+
+<script src="calculprix.js"></script>
+</body></html>

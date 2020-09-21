@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bon de commande</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>Prise de commande</h3>
+        <hr>
+      <div id="tab0"> 
+        <table id="tableau">
+            <th>Libellé</th>
+            <th>Référence</th>
+            <th>Quantité</th>
+            <th>Prix unitaire</th>
+            <th>Prix</th>
+            
+        </table></div> 
+
+        <div id='tab0'>
+            <p id='total'>
+            <input type="button" value="+" id="btnplus" class="btn" onclick="nouvelleLigne();">
+            <input  type="button" value="-" id="btnmoins" class="btn" onclick="suppLigne()">
+            <label id="tot" for="inplot">total</label>
+            <input id="inpTol" type="text" readonly="readonly"/></p>
+        </div>
+        <script src="bon_de_commande.js"></script>
+    </body>
+</html>

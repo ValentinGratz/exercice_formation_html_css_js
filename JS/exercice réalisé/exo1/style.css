@@ -1,0 +1,10 @@
+p.total{
+    text-align: right;
+}
+th{
+    text-align: center;
+    width:175px;
+}
+td{
+    width:180px;
+}

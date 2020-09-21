@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+    <meta charset="utf-8">
+	<title>ènième page avec du java</title>
+    
+	  <link rel="stylesheet" href="formulairecomplet.css">
+        
+    
+   </head>
+   <body>
+   
+      <form name="myForm" onsubmit="return validateForm()">
+	  <fieldset>
+         <p>Votre nom: <input type="text" name="nom" class="field-long"/> 
+		 <span class="error" id="erreurnom"></span></p>
+		 
+		 <p>Votre prenom: <input type="text" name="prenom" class="fiels-long"/> 
+		 <span class="error" id="erreurprenom"></span></p>
+		 
+		 <p>Votre Adresse: <input type="text" name="adresse" class="fiels-long"/> 
+		 <span class="error" id="erreuradresse"></span></p>
+		 
+		 <p>Numéro de membre: <input type="text" name="membre" class="fiels-long"/></p>
+		 <span class="error" id="erreurmembre"></span></p>
+		 
+		  <p>Votre ville: <input type="text" name="ville" class="field-long"/></p>
+		  
+		   <p>Votre Code postal: <input type="text" name="code" class="fiels-long"/></p>
+		   <span class="error" id="erreurcode"></span></p>
+		   
+		   
+			 <p>Votre téléphone: <input type="text" name="tel" class="fiels-long"/></p>
+			  <span class="error" id="erreurtel"></span></p>
+			  
+<p>Entrez une adresse e-mail:<input type="text" name="email" size=30 maxlength=40 class="fiels-long" > 
+<span class="error" id="erreurmail"></span></p>
+
+         <p><input type="submit" class="envoyer" value="Validation"onClick="verifMail(document.myForm.email.value)"></p>
+		 </fieldset>
+      </form>
+
+  
+  <script src="formulairecomplet.js"></script>
+ </body>
+</html>
