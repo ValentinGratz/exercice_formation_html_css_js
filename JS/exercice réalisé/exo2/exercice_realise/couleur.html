@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>  
+<html>  
+    <head>  
+	<style>
+
+    label.etroit, input[disabled]{
+	width : 10% ; 
+	margin : 5px ;
+	background : ligthgrey; }
+	
+	</style>
+        <script>  
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            }
+				function rgb() {
+  document.getElementById("id1").style.backgroundColor =
+  "rgb("+document.getElementById("red").value+","
+  +document.getElementById("green").value+","
+  +document.getElementById("blue").value+")";
+}
+        </script>  
+    </head> 
+    <body id="id1" onload ='affichage_couleur()'>
+...
+<table>
+    <tbody>
+        <tr>
+            <td colspan="5">
+               
+                <!-- RGB value boxes !-->
+            </td>
+            <td>
+                R
+                <input id="red" type=text size=3 maxlength=3 name="r" value="0" onBlur="rgb()">
+            </td>
+            <td>
+                G
+                <input id="green" type=text size=3 maxlength=3 name="g" value="0" onBlur="rgb()">
+            </td>
+            <td>    
+                B
+                <input id="blue" type=text size=3 maxlength=3 name="b" value="0" onBlur="rgb()">
+          </td>
+      </tr>
+  </tbody>
+</table>
+	   
+   
+        <button onclick = "changeColor('blue');">Bleu</button>
+        <button onclick = "changeColor('green');">Vert</button> 
+        <button onclick = "changeColor('red');">Rouge</button>
+		
+    </body>  
+</html>
